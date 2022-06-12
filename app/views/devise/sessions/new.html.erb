@@ -1,0 +1,46 @@
+<section class="h-100 bg-dark">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col">
+        <div class="card card-registration my-4">
+          <div class="row g-0">
+            <div class="col-xl-6 d-none d-xl-block">
+              <%= image_tag("signin-image.jpg", class: "img-fluid", style: "display: block; margin: 17% auto;")  %>
+            </div>
+            <div class="col-xl-6 h-100">
+              <div class="card-body p-md-5 text-black">
+                <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+                  <%= render "devise/shared/error_messages", resource: resource %>
+                  <div class="form-outline my-4">
+                    <%= f.label :email %><br />
+                    <%= f.email_field :email, class:'form-control form-control-lg', autofocus: true, autocomplete: "email", required: true %>
+                  </div>
+
+                  <div class="form-outline mb-4">
+                    <%= f.label :password %><br />
+                    <%= f.password_field :password, class:'form-control form-control-lg', autocomplete: "current-password" %>
+                  </div>
+
+                  <% if devise_mapping.rememberable? %>
+                    <div class="form-outline mb-4">
+                      <%= f.check_box :remember_me %>
+                      <%= f.label :remember_me %>
+                    </div>
+                  <% end %>
+
+                  <div class="d-flex justify-content-center pt-3">
+                    <%= f.submit "Log in", class: 'btn btn-warning btn-lg ms-2' %>
+                  </div>
+                <% end %>
+                <div class='d-flex justify-content-center mt-5'>
+                  <%= link_to "Create an account", new_registration_path(resource_name), class: 'btn btn-link', style:'color: black !important;' %>
+                  <%= link_to "Forgot your password?", new_password_path(resource_name), class: 'btn btn-link', style:'color: black !important;' %>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
