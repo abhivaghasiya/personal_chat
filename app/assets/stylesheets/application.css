@@ -25,13 +25,14 @@ body {
   height: calc(100vh - 150px);
 }
 #messages {
-  height: calc(100vh - 150px);
+  height: calc(100vh - 180px);
   overflow-x: hidden;
   overflow-y: scroll;
 }
 #room_container {
   height: calc(100vh - 56px);
   margin-right: 0px !important;
+  padding: 0px !important;
 }
 #side_panel {
   height: calc(100vh - 56px);
@@ -55,7 +56,7 @@ body {
   padding: 5px;
   border-radius: 10px;
   margin-bottom: 10px;
-  background-color: #555555;
+  /* background-color: #555555; */
 }
 .user_row {
   height: 50px;
@@ -73,11 +74,11 @@ body {
 }
 .user_list_item {
   height: auto;
-  background-color: #343a40 !important;
+  /* background-color: #343a40 !important; */
 }
 .room_list_item {
   height: auto;
-  background-color: #343a40 !important;
+  background-color: transparent !important;
   color: #fff;
 }
 .name {
