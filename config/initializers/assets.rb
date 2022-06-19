@@ -9,4 +9,4 @@ Rails.application.config.assets.version = "1.0"
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in the app/assets
 # folder are already added.
-# Rails.application.config.assets.precompile += %w( admin.js admin.css )
+# Rails.application.config.assets.precompile += %w( aos/aos.js glightbox/glightbox.min.js swiper/swiper-bundle.min.js custom/main.js aos/aos.css glightbox/glightbox.min.css swiper/swiper-bundle.min.css )

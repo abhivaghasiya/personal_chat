@@ -151,5 +151,9 @@ body {
 }
 
 a {
-  color: #fff !important;
+  color: #fff;
+}
+
+.bg-chat {
+  background-color: #52658e !important;
 }
